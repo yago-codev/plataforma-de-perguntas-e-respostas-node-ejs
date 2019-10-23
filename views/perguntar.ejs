@@ -1,0 +1,17 @@
+<%- include partials/head.ejs %>
+  <%- include partials/navbar.ejs %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron bg-dark">
+        <h3 class="text-white mb-3">Realizar pergunta</h3>
+        <form class="text-white" method="POST" action="/salvarpergunta">
+          <label for="titulo">Título</label>
+          <input type="text" class="form-control mb-3" name="tituloPergunta" id="titulo" placeholder="Título">
+          <label for="descricao">Descrição</label>
+          <textarea class="form-control mb-3" name="descricaoPergunta" id="descricao" cols="30" rows="10" placeholder="Descreva sua pergunta aqui"></textarea>
+          <button class="btn btn-success">Perguntar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<%- include partials/footer.ejs %>
